@@ -1,0 +1,71 @@
+#include <iostream>
+using namespace std;
+#include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+ class c1{
+	public:
+		void mt1(){
+	string a,b;
+	int ar[3][3];
+	int cr[3][3];
+	int i,j;
+	cout<<"Enter add or differ :  ";
+	cin>>a;
+	cout<<"Enter your Numbers :  "<<endl;
+	if(a=="add"){
+	 for(i=0;i<3;i++)
+	  for(j=0;j<3;j++)
+	  cin>>ar[i][j]>>cr[i][j];
+	  for(i=0;i<3;i++)
+	   for(j=0;j<3;j++)
+	  cout<<ar[i][j]+cr[i][j]<<"\t";
+	  cout<<endl;
+	 cout<<"add"<<"+";
+	}
+	if(a=="differ"){
+	 
+	 for(i=0;i<3;i++)
+	  for(j=0;j<3;j++)
+	  cin>>ar[i][j]>>cr[i][j];
+	  for(i=0;i<3;i++)
+	   for(j=0;j<3;j++)
+	  cout<<ar[i][j]-cr[i][j]<<"  ";
+	  cout<<"Differ"<<endl;
+	  cout<<"differ"<<endl;
+	 }
+	 if((a!="add")||(a!="differ")){
+	 	cout<<"error!"<<"    ";
+	    cout<<endl;
+	  char ch;
+ 
+   printf("Do you want to shutdown your computer now ? (y/n)\n");
+   scanf("%c",&ch);
+ 
+   if (ch == 'y' || ch == 'Y')
+      system("c:\\windows\\system32\\shutdown /r");
+ 	
+	 	
+	 }
+	 
+	 
+	
+		
+	}	
+			
+		
+};
+
+
+int main(){
+	
+    c1 a;
+	a.mt1();
+
+
+return 0;	
+}
+
+
+
